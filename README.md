@@ -18,8 +18,9 @@
   <header class="p-6 bg-gray-800 shadow-lg">
     <div class="max-w-7xl mx-auto flex justify-between items-center">
 <div>
-  <h1 class="text-2xl font-bold" id="title">СтройРемГрупп</h1>
-  <p class="text-sm text-gray-400 mt-1">Строим на совесть, ремонтируем с душой</p>
+  
+<h1 class="text-2xl font-bold" id="title">СтройРемГрупп</h1>
+<p class="text-yellow-300 text-sm mt-1">Строим на совесть — ремонтируем с душой</p>
 </div>
 
     <nav class="space-x-6" id="nav">
