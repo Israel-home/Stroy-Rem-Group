@@ -57,7 +57,7 @@
   <section id="portfolio" class="py-16 bg-gray-950 px-4" data-aos="fade-up">
     <h3 class="text-3xl font-bold mb-8 text-center" id="portfolio-title">Портфолио</h3>
     <div class="grid md:grid-cols-3 gap-6 max-w-7xl mx-auto">
-      <img src="https://source.unsplash.com/400x300/?interior" class="rounded-xl" alt="Пример работы">
+      <img src="[https://source.unsplash.com/400x300/?interior](https://github.com/Israel-home/Stroy-Rem-Group/blob/main/IMG-20250220-WA0008.jpg)" class="rounded-xl" alt="Пример работы">
       <img src="https://source.unsplash.com/400x300/?construction" class="rounded-xl" alt="Пример работы">
       <img src="https://source.unsplash.com/400x300/?architecture" class="rounded-xl" alt="Пример работы">
     </div>
