@@ -37,7 +37,6 @@
 <section id="about" class="bg-gray-950 py-20 text-center" data-aos="fade-up">
   <h2 class="text-4xl font-bold mb-4" id="hero-title">Ремонт квартир и строительство домов из металлоконструкций</h2>
   <p class="text-gray-400 max-w-xl mx-auto mb-2" id="hero-subtitle">Профессионально. Надёжно. В срок.</p>
-  <p class="text-yellow-400 text-xl font-semibold" id="slogan">Стоим на
 
   <!-- Services -->
   <section id="services" class="py-16 px-4 max-w-7xl mx-auto" data-aos="fade-up">
