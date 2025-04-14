@@ -75,6 +75,83 @@ html
         <figcaption class="sr-only">Пример ремонта квартиры</figcaption>
       </figure>
       <figure>
+html
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Профессиональный ремонт квартир и строительство домов из металлоконструкций. Гарантия качества и сроков.">
+  <meta name="keywords" content="ремонт, строительство, металлоконструкции, ремонт квартир">
+  <!-- OpenGraph -->
+  <meta property="og:title" content="СтройРемГрупп">
+  <meta property="og:description" content="Ремонт и строительство под ключ">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://example.com/path-to-image.jpg">
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://cdn.tailwindcss.com">
+  <link rel="preconnect" href="https://unpkg.com">
+  <title>Ремонт и Строительство | СтройРемГрупп</title>
+  <!-- Styles -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    button, a {
+      transition: all 0.3s ease;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white font-sans" id="body">
+  <!-- Header -->
+  <header class="p-6 bg-gray-800 shadow-lg">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <div>
+        <h1 class="text-2xl font-bold" id="title">СтройРемГрупп</h1>
+        <p class="text-sm text-gray-400 mt-1">Строим на совесть, ремонтируем с душой</p>
+      </div>
+      <nav aria-label="Основное меню" class="space-x-6" id="nav">
+        <a href="#about" class="hover:text-yellow-400" id="nav-about">О нас</a>
+        <a href="#services" class="hover:text-yellow-400" id="nav-services">Услуги</a>
+        <a href="#portfolio" class="hover:text-yellow-400" id="nav-portfolio">Портфолио</a>
+        <a href="#contact" class="hover:text-yellow-400" id="nav-contact">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="about" class="bg-gray-950 py-20 text-center" data-aos="fade-up">
+    <h2 class="text-4xl font-bold mb-4" id="hero-title">Ремонт квартир и строительство домов из металлоконструкций</h2>
+    <p class="text-gray-400 max-w-xl mx-auto" id="hero-subtitle">Профессионально. Надёжно. В срок.</p>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-16 px-4 max-w-7xl mx-auto" data-aos="fade-up">
+    <h3 class="text-3xl font-bold mb-8 text-center" id="services-title">Наши услуги</h3>
+    <div class="grid md:grid-cols-2 gap-10">
+      <div class="bg-gray-800 p-6 rounded-xl shadow-md" itemscope itemtype="https://schema.org/Service">
+        <h4 class="text-xl font-semibold mb-2" id="service-1-title" itemprop="name">Ремонт квартир</h4>
+        <p class="text-gray-400" id="service-1-desc" itemprop="description">Косметический и капитальный ремонт под ключ с гарантией качества.</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-xl shadow-md" itemscope itemtype="https://schema.org/Service">
+        <h4 class="text-xl font-semibold mb-2" id="service-2-title" itemprop="name">Строительство домов</h4>
+        <p class="text-gray-400" id="service-2-desc" itemprop="description">Современные дома из металлоконструкций — быстро, надёжно, энергоэффективно.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="py-16 bg-gray-950 px-4" data-aos="fade-up">
+    <h3 class="text-3xl font-bold mb-8 text-center" id="portfolio-title">Портфолио</h3>
+    <div class="grid md:grid-cols-3 gap-6 max-w-7xl mx-auto">
+      <figure>
+        <img src="https://source.unsplash.com/400x300/?interior" loading="lazy" class="rounded-xl" alt="Интерьер квартиры после ремонта" width="400" height="300">
+        <figcaption class="sr-only">Пример ремонта квартиры</figcaption>
+      </figure>
+      <figure>
         <img src="https://source.unsplash.com/400x300/?construction" loading="lazy" class="rounded-xl" alt="Строительство дома из металлоконструкций" width="400" height="300">
         <figcaption class="sr-only">Строительство дома</figcaption>
       </figure>
@@ -163,7 +240,7 @@ html
         "addressLocality": "Ваш город",
         "streetAddress": "Ваш адрес"
       },
-      "telephone": "+XXXXXXXXXXX",
+      "telephone": "+972557734071",
       "openingHours": "Mo-Fr 09:00-18:00"
     }
   </script>
