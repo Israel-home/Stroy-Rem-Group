@@ -103,10 +103,10 @@
       <h3 class="text-3xl font-bold mb-12 text-center">Наши работы</h3>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div class="group relative overflow-hidden rounded-xl">
-          <img src="images/project1.jpg" loading="lazy" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110" alt="Ремонт квартиры в Москве">
+          <img src="images/project1.jpg" loading="lazy" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110" alt="">
           <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6 opacity-0 group-hover:opacity-100 transition-opacity">
             <div>
-              <h4 class="text-xl font-bold">Квартира в Москве</h4>
+              <h4 class="text-xl font-bold">Дом в кибуце</h4>
               <p class="text-gray-300">Капитальный ремонт, 85 м²</p>
             </div>
           </div>
@@ -182,8 +182,8 @@
       </div>
       <div>
         <h5 class="font-semibold mb-4">Контакты</h5>
-        <p class="text-gray-400 mb-2">Москва, ул. Строителей, 15</p>
-        <p class="text-gray-400 mb-2">+7 (495) 123-45-67</p>
+        <p class="text-gray-400 mb-2"></p>
+        <p class="text-gray-400 mb-2">0557734071</p>
         <p class="text-gray-400">info@stroirem.ru</p>
       </div>
       <div>
