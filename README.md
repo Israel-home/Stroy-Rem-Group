@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="ru" dir="ltr">
 <head>
@@ -5,14 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Профессиональный ремонт квартир и строительство домов из металлоконструкций. Гарантия качества и сроков.">
   <meta name="keywords" content="ремонт, строительство, металлоконструкции">
+  <meta name="robots" content="index, follow">
   <!-- OpenGraph -->
   <meta property="og:title" content="СтройРемГрупп">
   <meta property="og:description" content="Ремонт и строительство под ключ">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://israel-home.github.io/Stroy-Rem-Group/images/og-image.jpg">
+  <link rel="canonical" href="https://israel-home.github.io/Stroy-Rem-Group/">
   <title>Ремонт и Строительство | СтройРемГрупп</title>
   <!-- Preconnect -->
   <link rel="preconnect" href="https://cdn.tailwindcss.com">
   <link rel="preconnect" href="https://unpkg.com">
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <!-- Styles -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -20,7 +26,15 @@
   <style>
     html { scroll-behavior: smooth; }
     button, a { transition: all 0.3s ease; }
-    .text-gold { color: rgba(234, 179, 8, 0.8); } /* Кастомный полупрозрачный желтый */
+    .text-gold { color: rgba(234, 179, 8, 0.8); }
+    #mobile-menu {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+    }
+    #mobile-menu.active {
+      max-height: 500px;
+    }
   </style>
 </head>
 <body class="bg-gray-900 text-white font-sans">
@@ -40,10 +54,10 @@
         <a href="#portfolio" class="hover:text-yellow-400">Портфолио</a>
         <a href="#contact" class="hover:text-yellow-400">Контакты</a>
       </nav>
-      <button class="md:hidden text-yellow-400" id="mobile-menu-button">☰</button>
+      <button class="md:hidden text-yellow-400" id="mobile-menu-button" aria-label="Меню">☰</button>
     </div>
     <!-- Мобильное меню -->
-    <div class="md:hidden hidden mt-4" id="mobile-menu">
+    <div class="md:hidden" id="mobile-menu">
       <a href="#about" class="block py-2 hover:text-yellow-400">О нас</a>
       <a href="#services" class="block py-2 hover:text-yellow-400">Услуги</a>
       <a href="#portfolio" class="block py-2 hover:text-yellow-400">Портфолио</a>
@@ -56,9 +70,9 @@
     <div>
       <h2 class="text-4xl font-bold mb-4">Ремонт квартир и строительство домов из металлоконструкций</h2>
       <p class="text-gray-400 max-w-xl mx-auto text-lg">Профессионально. Надёжно. В срок.</p>
-      <button class="mt-8 bg-yellow-500 hover:bg-yellow-600 text-black font-semibold py-3 px-8 rounded">
+      <a href="#contact" class="inline-block mt-8 bg-yellow-500 hover:bg-yellow-600 text-black font-semibold py-3 px-8 rounded">
         Бесплатная консультация
-      </button>
+      </a>
     </div>
   </section>
 
@@ -90,7 +104,7 @@
       <h3 class="text-3xl font-bold mb-12 text-center">Наши работы</h3>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div class="group relative overflow-hidden rounded-xl">
-          <img src="https://source.unsplash.com/600x400/?interior" loading="lazy" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110" alt="Ремонт квартиры">
+          <img src="images/project1.jpg" loading="lazy" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110" alt="Ремонт квартиры в Москве">
           <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6 opacity-0 group-hover:opacity-100 transition-opacity">
             <div>
               <h4 class="text-xl font-bold">Квартира в Москве</h4>
@@ -98,7 +112,24 @@
             </div>
           </div>
         </div>
-        <!-- Еще 5 аналогичных блоков с другими проектами -->
+        <div class="group relative overflow-hidden rounded-xl">
+          <img src="images/project2.jpg" loading="lazy" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110" alt="Загородный дом из металлоконструкций">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6 opacity-0 group-hover:opacity-100 transition-opacity">
+            <div>
+              <h4 class="text-xl font-bold">Загородный дом</h4>
+              <p class="text-gray-300">150 м², металлоконструкции</p>
+            </div>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-xl">
+          <img src="images/project3.jpg" loading="lazy" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110" alt="Офисный ремонт">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6 opacity-0 group-hover:opacity-100 transition-opacity">
+            <div>
+              <h4 class="text-xl font-bold">Офис в бизнес-центре</h4>
+              <p class="text-gray-300">Ремонт офиса, 120 м²</p>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="text-center mt-12">
         <button class="border-2 border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black font-semibold py-2 px-6 rounded-full transition-all">
@@ -111,14 +142,20 @@
   <!-- Contact -->
   <section id="contact" class="py-16 px-4 max-w-2xl mx-auto" data-aos="fade-up">
     <h3 class="text-3xl font-bold mb-8 text-center">Свяжитесь с нами</h3>
-    <form class="space-y-5">
-      <input type="text" placeholder="Ваше имя" class="w-full p-4 rounded-lg bg-gray-800 text-white placeholder-gray-500 border border-gray-700 focus:border-yellow-400 focus:outline-none">
-      <input type="tel" placeholder="Телефон" class="w-full p-4 rounded-lg bg-gray-800 text-white placeholder-gray-500 border border-gray-700 focus:border-yellow-400 focus:outline-none" required>
-      <textarea placeholder="Ваше сообщение" rows="5" class="w-full p-4 rounded-lg bg-gray-800 text-white placeholder-gray-500 border border-gray-700 focus:border-yellow-400 focus:outline-none"></textarea>
+    <form id="contact-form" class="space-y-5">
+      <input type="text" name="name" placeholder="Ваше имя" class="w-full p-4 rounded-lg bg-gray-800 text-white placeholder-gray-500 border border-gray-700 focus:border-yellow-400 focus:outline-none" required>
+      <input type="tel" name="phone" placeholder="Телефон" class="w-full p-4 rounded-lg bg-gray-800 text-white placeholder-gray-500 border border-gray-700 focus:border-yellow-400 focus:outline-none" required>
+      <textarea name="message" placeholder="Ваше сообщение" rows="5" class="w-full p-4 rounded-lg bg-gray-800 text-white placeholder-gray-500 border border-gray-700 focus:border-yellow-400 focus:outline-none"></textarea>
       <button type="submit" class="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-semibold py-3 px-6 rounded-lg transition-all">
         Отправить заявку
       </button>
     </form>
+    <div id="form-success" class="hidden mt-4 p-4 bg-green-500/20 text-green-400 rounded-lg">
+      Заявка отправлена! Мы свяжемся с вами в ближайшее время.
+    </div>
+    <div id="form-error" class="hidden mt-4 p-4 bg-red-500/20 text-red-400 rounded-lg">
+      Ошибка отправки. Пожалуйста, попробуйте позже или свяжитесь другим способом.
+    </div>
   </section>
 
   <!-- Map -->
@@ -152,16 +189,16 @@
       </div>
       <div>
         <h5 class="font-semibold mb-4">Услуги</h5>
-        <a href="#" class="block text-gray-400 hover:text-yellow-400 mb-2">Ремонт квартир</a>
-        <a href="#" class="block text-gray-400 hover:text-yellow-400 mb-2">Строительство домов</a>
-        <a href="#" class="block text-gray-400 hover:text-yellow-400">Дизайн-проекты</a>
+        <a href="#services" class="block text-gray-400 hover:text-yellow-400 mb-2">Ремонт квартир</a>
+        <a href="#services" class="block text-gray-400 hover:text-yellow-400 mb-2">Строительство домов</a>
+        <a href="#services" class="block text-gray-400 hover:text-yellow-400">Дизайн-проекты</a>
       </div>
       <div>
         <h5 class="font-semibold mb-4">Соцсети</h5>
         <div class="flex space-x-4">
-          <a href="#" class="text-gray-400 hover:text-yellow-400 text-xl">VK</a>
-          <a href="#" class="text-gray-400 hover:text-yellow-400 text-xl">TG</a>
-          <a href="#" class="text-gray-400 hover:text-yellow-400 text-xl">YouTube</a>
+          <a href="https://vk.com/stroiremgroup" class="text-gray-400 hover:text-yellow-400 text-xl" aria-label="ВКонтакте">VK</a>
+          <a href="https://t.me/stroiremgroup" class="text-gray-400 hover:text-yellow-400 text-xl" aria-label="Telegram">TG</a>
+          <a href="https://wa.me/79991234567" class="text-gray-400 hover:text-yellow-400 text-xl" aria-label="WhatsApp">WA</a>
         </div>
       </div>
     </div>
@@ -183,7 +220,8 @@
     const mobileMenu = document.getElementById('mobile-menu');
     if (mobileMenuButton && mobileMenu) {
       mobileMenuButton.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
+        mobileMenu.classList.toggle('active');
+        mobileMenuButton.textContent = mobileMenu.classList.contains('active') ? '✕' : '☰';
       });
     }
 
@@ -199,9 +237,44 @@
           target.scrollIntoView({
             behavior: 'smooth'
           });
+          // Закрываем мобильное меню после клика
+          if (mobileMenu.classList.contains('active')) {
+            mobileMenu.classList.remove('active');
+            mobileMenuButton.textContent = '☰';
+          }
         }
       });
     });
+
+    // Обработка формы
+    const contactForm = document.getElementById('contact-form');
+    const formSuccess = document.getElementById('form-success');
+    const formError = document.getElementById('form-error');
+    
+    if (contactForm) {
+      contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        
+        const formData = new FormData(contactForm);
+        const response = await fetch('https://api.telegram.org/botВАШ_BOT_API/sendMessage', {
+          method: 'POST',
+          body: new URLSearchParams({
+            chat_id: 'ВАШ_CHAT_ID',
+            text: `Новая заявка:\nИмя: ${formData.get('name')}\nТелефон: ${formData.get('phone')}\nСообщение: ${formData.get('message')}`
+          })
+        });
+        
+        if (response.ok) {
+          contactForm.reset();
+          formSuccess.classList.remove('hidden');
+          formError.classList.add('hidden');
+        } else {
+          formError.classList.remove('hidden');
+          formSuccess.classList.add('hidden');
+        }
+      });
+    }
   </script>
 </body>
 </html>
+```
